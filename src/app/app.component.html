@@ -1,0 +1,13 @@
+<nav class='block navigation-panel'>
+  <a [routerLink]="['page1']" class="control">Page1</a>
+  <a [routerLink]="['page2']" class="control">Page2</a>
+  <a [routerLink]="['page1']" fragment="item15" class="control">Page1#item5</a>
+  <button (click)="onLocationBack()" class='control'>Location Back</button>
+  <button (click)="onLocationBackAngular()" class='control'>Location Back (Angular)</button>
+</nav>
+<section class="block">
+  <p>
+    Router Scroller introduced! 
+  </p>
+  <router-outlet></router-outlet>
+</section>
